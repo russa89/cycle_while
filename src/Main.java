@@ -65,10 +65,37 @@ public class Main {
             saving = saving + money;
             saving = saving + (saving * 7 / 100);
             if (m % 6 == 0) {
-                System.out.printf("Месяц %s - сумма накоплений равна %s. %n", m, saving);}
+                System.out.printf("Месяц %s - сумма накоплений равна %s. %n", m, saving);
             }
+        }
         System.out.println("\nЗадание 7");
+        int firstFriday = 5;
+        while (firstFriday <= 31) {
+            System.out.println("Сегодня пятница " + firstFriday + " число. Нужно подготовить отчет.");
+            firstFriday += 7;
+        }
+        System.out.println("\nЗадание 8");
+        int yearOfComing = 1824;
+        int date = 2024;
 
+        while (yearOfComing >= date - 200 && yearOfComing <= date + 100){
+            yearOfComing++;
+            if (yearOfComing % 79 == 0) {
+                System.out.println(yearOfComing);
 
+            }
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
