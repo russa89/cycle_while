@@ -6,7 +6,6 @@ public class Main {
         int m = 0;
         while (totalSaving < 2_459_000) {
             m++;
-            totalSaving = totalSaving + totalSaving / 100;
             totalSaving = totalSaving + moneySaving;
         }
         System.out.printf("Месяц %s - сумма накоплений равна %s. %n", m, totalSaving);
@@ -39,8 +38,8 @@ public class Main {
         int month = 0;
         while (saving < 12_000_000) {
             month++;
-            saving = saving + money;
             saving = saving + (saving * 7 / 100);
+            saving = saving + money;
             System.out.printf("Месяц %s - сумма накоплений равна %s. %n", month, saving);
         }
         System.out.println("\nЗадание 5");
@@ -49,8 +48,8 @@ public class Main {
         month = 0;
         while (saving < 12_000_000) {
             month++;
-            saving = saving + money;
             saving = saving + (saving * 7 / 100);
+            saving = saving + money;
             if (month % 6 == 0) {
                 System.out.printf("Месяц %s - сумма накоплений равна %s. %n", month, saving);
             }
@@ -62,8 +61,8 @@ public class Main {
         int time = 9 * 12;
         while (m <= time) {
             m++;
-            saving = saving + money;
             saving = saving + (saving * 7 / 100);
+            saving = saving + money;
             if (m % 6 == 0) {
                 System.out.printf("Месяц %s - сумма накоплений равна %s. %n", m, saving);
             }
